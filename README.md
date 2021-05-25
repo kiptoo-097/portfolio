@@ -1,12 +1,9 @@
 # Portfolio Website 
-[![HitCount](http://hits.dwyl.com/navendu-pottekkat/navendu-pottekkatgithubio.svg)](http://hits.dwyl.com/navendu-pottekkat/navendu-pottekkatgithubio)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/navendu-pottekkat/navendu-pottekkat.github.io/issues)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Twitter](https://img.shields.io/twitter/follow/sudo_navendu.svg?style=social&label=@sudo_navendu)](https://twitter.com/sudo_navendu) 
+
 
 Hosted with ❤ by GitHub  
 
-A portfolio website that can be used to show your projects or other information. The site is live at [navendu.me](https://navendu-pottekkat.github.io/)
+A portfolio website that can be used to show your projects or other information. The site is live at (https://kiptoo-097.github.io/portfolio)
 
 If that does not convince you, here are some other reason that might make you build one:
 
@@ -16,7 +13,7 @@ If that does not convince you, here are some other reason that might make you bu
 
 Here is a preview of the website.
 
-![Preview](preview.gif)
+
 
 ## Editing / Personalisation
 
@@ -34,7 +31,4 @@ You can edit the CNAME file in the root folder of this repo. You can use GitHub 
 
 Please do leave a star if you found this helpful!
 
-Happy coding!
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+Happy coding!,
