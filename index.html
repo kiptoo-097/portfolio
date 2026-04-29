@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="msvalidate.01" content="8A044F6B24E3A19810D766CAE2ACA17A" />
     <meta name="author" content="Kiptoo Kennedy">
-    <meta name="author" content="Kiptoo Kennedy">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Kiptoo Kennedy</title>
+    <title>Kiptoo Kennedy | Software Developer & IT Consultant</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png">
@@ -25,46 +24,253 @@
     <!-- Fonts CSS-->
     <link rel="stylesheet" href="css/heading.css">
     <link rel="stylesheet" href="css/body.css">
+    <style>
+        /* Additional custom styles for consistency */
+        .btn-github-nav {
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 50px;
+            padding: 0.5rem 1rem !important;
+            transition: all 0.3s ease;
+        }
+        .btn-github-nav:hover {
+            background-color: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .contact-github-link {
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+        .contact-github-link:hover {
+            transform: scale(1.05);
+        }
+        .icon-contact {
+            font-size: 2.5rem;
+            color: #1e6f5c;
+            transition: color 0.2s ease;
+        }
+        .icon-contact:hover {
+            color: #289672;
+        }
+        .footer .fa-stack {
+            transition: transform 0.2s ease;
+        }
+        .footer .fa-stack:hover {
+            transform: translateY(-3px);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        /* Four column layout for projects */
+        @media (min-width: 992px) {
+            .projects-four-col .col-lg-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            .projects-four-col .col-md-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        .badge {
+            padding: 5px 10px;
+            margin: 2px;
+            font-size: 0.7rem;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        .badge-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .badge-warning {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .badge-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .badge-info {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .card-text {
+            font-size: 0.85rem;
+        }
+        .card-title {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .card-title a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card-title a:hover {
+            color: #1e6f5c;
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* NEW HEADER BACKGROUND - Modern Dark Gradient */
+        .masthead {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            padding: 100px 0;
+        }
+        
+        /* About Section Background Color - Warm Professional Coral/Orange Gradient */
+        .about-section {
+            background: linear-gradient(135deg, #e65c00 0%, #F9D423 100%);
+            color: #ffffff;
+            padding: 80px 0;
+        }
+        .about-section .divider-custom-line {
+            background-color: #ffffff;
+        }
+        .about-section .page-section-heading {
+            color: #ffffff !important;
+        }
+        
+        /* Header text enhancements */
+        .masthead .masthead-heading {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .masthead .masthead-subheading {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        /* Custom divider styling for header */
+        .divider-custom-custom {
+            margin: 25px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .divider-custom-custom .divider-line {
+            width: 80px;
+            height: 3px;
+            background-color: #ffffff;
+            border-radius: 3px;
+        }
+        .divider-custom-custom .divider-icon {
+            margin: 0 15px;
+            font-size: 1.8rem;
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body id="page-top">
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Kiptoo Kennedy</a>
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Kiptoo Kennedy</a>
             <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#portfolio">PROJECTS</a>
+                    <!-- ABOUT moved to first position in navbar -->
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#about">ABOUT</a>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PROJECTS</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#contact">CONTACTS</a>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACTS</a>
+                    </li>
+                    <!-- GitHub Nav Link -->
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-2 px-3 rounded btn-github-nav" href="https://github.com/kiptoo-097" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <header class="masthead bg-primary text-white text-center">
+    <!-- HEADER SECTION - NEW BACKGROUND GRADIENT -->
+    <header class="masthead text-white text-center">
         <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/ken.jpg" style="border-radius: 50%;" alt="Kiptoo image">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/ken.jpg" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 4px solid rgba(255,255,255,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.2);" alt="Kiptoo Kennedy profile picture">
             <!-- Masthead Heading-->
             <h1 class="masthead-heading mb-0">Kiptoo Kennedy</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-id-badge"></i></div>
-                <div class="divider-custom-line"></div>
+            <!-- Custom Icon Divider -->
+            <div class="divider-custom-custom">
+                <div class="divider-line"></div>
+                <div class="divider-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="divider-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="pre-wrap masthead-subheading font-weight-light mb-0">Software Developer  <br>IT Consultant   </br>  
+            
+            <div class="mt-4">
+                <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-4 js-scroll-trigger">
+                    <i class="fas fa-chevron-down mr-2"></i> Discover More
+                </a>
+            </div>
         </div>
     </header>
+
+    <!-- ABOUT SECTION - NEW WARM GRADIENT BACKGROUND -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2 class="page-section-heading d-inline-block" style="font-size: 2.5rem; font-weight: 700; letter-spacing: 2px; color: #ffffff;">ABOUT ME</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light" style="margin-bottom: 40px;">
+                <div class="divider-custom-line" style="border-top: 2px solid #fff; width: 40%; margin: 0 auto;"></div>
+                <div class="divider-custom-icon" style="font-size: 30px; color: #fff; margin: 10px 0;">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="divider-custom-line" style="border-top: 2px solid #fff; width: 40%; margin: 0 auto;"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="text-center" style="max-width: 900px; margin: 0 auto;">
+                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; color: #ffffff;">
+                    I am a skilled IT professional with a comprehensive background in both hardware and software. I have strong experience in system and network administration, ensuring optimal performance and security for computer systems and networks. My technical expertise spans cloud management, software installation, and providing effective technical support, ensuring that everything runs smoothly.
+                </p>
+                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; color: #ffffff;">
+                    In software development, I am proficient in front-end technologies such as HTML, CSS, and JavaScript, and have experience building dynamic applications. I also work with Python, utilizing frameworks like Django and Flask for backend development. I am comfortable using tools like Git and GitHub for version control and have a good understanding of various databases, including MS Access, PostgreSQL, MySQL, and SQL.
+                </p>
+                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; color: #ffffff;">
+                    Additionally, I am experienced in managing content management systems (CMS) and implementing security measures to protect data integrity. With a background in graphic design, I can create visually appealing content using tools such as Photoshop, Figma, and Illustrator. My wide range of technical skills enables me to deliver effective solutions across both software and hardware aspects of IT.
+                </p>
+                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; color: #ffffff;">
+                    Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.
+                </p>
+                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; color: #ffffff;">
+                    I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION - 4 columns layout -->
     <section class="page-section portfolio" id="portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
@@ -77,97 +283,91 @@
                 <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio Grid Items - 4 columns -->
+            <div class="row projects-four-col">
+                <!-- Project 1: Pharmacy Management System -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card h-100">
-                        <a target="_blank" href="https://github.com/kiptoo-097/Pharmacy-Management-System"><img class="card-img-top" src="./assets/img/proj_10.png" alt="NSFW Filter"></a>
+                        <a target="_blank" href="https://github.com/kiptoo-097/Pharmacy-Management-System" rel="noopener noreferrer">
+                            <img class="card-img-top" src="./assets/img/proj_10.png" alt="Pharmacy Management System">
+                        </a>
                         <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://github.com/kiptoo-097/Pharmacy-Management-System">PHARMACY MANAGEMENT SYSTEM</a>
-                            </h4>
+                            <h5 class="card-title">
+                                <a target="_blank" href="https://github.com/kiptoo-097/Pharmacy-Management-System" rel="noopener noreferrer">PHARMACY MANAGEMENT SYSTEM</a>
+                            </h5>
                             <p class="card-text">
                                 <span class="badge badge-success">Python</span>
                                 <span class="badge badge-warning">Django</span>
-                                </br></br>The pharmacy management system, also known as the pharmacy information system, is a system that stores data and enables functionality that organizes and maintains the medication use process within pharmacies.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <a target="_blank" href="https://kiptoo-097.github.io/Kenny-pizza/"><img class="card-img-top" src="./assets/img/proj_11.png" alt="Kenny pizza"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://kiptoo-097.github.io/Kenny-pizza/">PIZZA ORDER AND DELIVERY WEB APP</a>
-                            </h4>
-                            <p class="card-text">
-                                <span class="badge badge-primary">HTML</span>
-                                <span class="badge badge-warning">CSS</span>
-                                <span class="badge badge-secondary">Javascript</span>
-                                </br></br>This is a Web app service in which a pizzeria or pizza chain delivers a pizza to a customer. An order is typically made over the web app, in which the customer can request pizza type and size, and other items to be delivered with it, commonly including transport fee.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <a target="_blank" href="https://kiptoo-097.github.io/Git-search/"><img class="card-img-top" src="./assets/img/gitsearch.png" alt="Awesome README"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a target="_blank" href="https://kiptoo-097.github.io/Git-search/">GITHUB SEARCH</a>
-                            </h4>
-                            <p class="card-text">
-                                <span class="badge badge-primary">HTML</span>
-                                <span class="badge badge-warning">CSS</span>
-                                <span class="badge badge-danger">Angular</span>
-                                <span class="badge badge-secondary">Javascript</span>
-                                </br></br>This Web Application helps user to search other peoples profile repositories, followers date the account was created and place of location.
+                                <br><br>A comprehensive system that stores data and enables functionality that organizes and maintains the medication use process within pharmacies.
                             </p>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Project 2: Mestowoot Media Services -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card h-100">
+                        <a target="_blank" href="https://mestowootmediaservices.co.ke" rel="noopener noreferrer">
+                            <img class="card-img-top" src="./assets/img/mestowoot.png" alt="Mestowoot Media Services">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a target="_blank" href="https://mestowootmediaservices.co.ke" rel="noopener noreferrer">MESTOWOOT MEDIA SERVICES</a>
+                            </h5>
+                            <p class="card-text">
+                                <span class="badge badge-success">Python</span>
+                                <span class="badge badge-warning">Django</span>
+                                <span class="badge badge-secondary">JavaScript</span>
+                                <br><br>Professional media production and digital services platform built with Django for content creation and management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Kenmax Online Shop -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card h-100">
+                        <a target="_blank" href="https://www.shop.kenmax.co.ke/" rel="noopener noreferrer">
+                            <img class="card-img-top" src="./assets/img/styleandsole.png" alt="Kenmax Online Shop">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a target="_blank" href="https://www.shop.kenmax.co.ke/" rel="noopener noreferrer">KENMAX ONLINE SHOP</a>
+                            </h5>
+                            <p class="card-text">
+                                <span class="badge badge-success">Python</span>
+                                <span class="badge badge-warning">Django</span>
+                                <span class="badge badge-secondary">JavaScript</span>
+                                <br><br>Fully functional e-commerce platform with product management, cart system, and secure checkout process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Geonova Concepts Limited -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card h-100">
+                        <a target="_blank" href="https://www.geonova.co.ke/" rel="noopener noreferrer">
+                            <img class="card-img-top" src="./assets/img/geonova.png" alt="Geonova Concepts Limited" onerror="this.src='https://via.placeholder.com/400x200?text=Geonova+Concepts'">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a target="_blank" href="https://www.geonova.co.ke/" rel="noopener noreferrer">GEONOVA CONCEPTS LIMITED</a>
+                            </h5>
+                            <p class="card-text">
+                                <span class="badge badge-success">Python</span>
+                                <span class="badge badge-warning">Django</span>
+                                <span class="badge badge-secondary">JavaScript</span>
+                                <br><br>Premier provider of comprehensive physical planning, survey, and mapping services dedicated to delivering innovative, sustainable solutions across Kenya. Empowering development through precision and expertise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="page-section bg-primary text-white mb-0" id="about" style="padding: 60px 0;">
-        <div class="container">
-            <!-- About Section Heading-->
-            <div class="text-center" style="margin-bottom: 40px;">
-                <h2 class="page-section-heading d-inline-block text-white" style="font-size: 2.5rem; font-weight: 700; letter-spacing: 2px;">ABOUT</h2>
-            </div>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light" style="margin-bottom: 40px;">
-                <div class="divider-custom-line" style="border-top: 2px solid #fff; width: 40%; margin: 0 auto;"></div>
-                <div class="divider-custom-icon" style="font-size: 30px; color: #fff; margin: 10px 0;">
-                    <i class="fas fa-random"></i>
-                </div>
-                <div class="divider-custom-line" style="border-top: 2px solid #fff; width: 40%; margin: 0 auto;"></div>
-            </div>
-            <!-- About Section Content-->
-            <div class="text-center" style="max-width: 900px; margin: 0 auto;">
-                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
-                    I am a skilled IT professional with a comprehensive background in both hardware and software. I have strong experience in system and network administration, ensuring optimal performance and security for computer systems and networks. My technical expertise spans cloud management, software installation, and providing effective technical support, ensuring that everything runs smoothly.
-                </p>
-                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
-                    In software development, I am proficient in front-end technologies such as HTML, CSS, and JavaScript, and have experience building dynamic applications. I also work with Python, utilizing frameworks like Django and Flask for backend development. I am comfortable using tools like Git and GitHub for version control and have a good understanding of various databases, including MS Access, PostgreSQL, MySQL, and SQL.
-                </p>
-                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
-                    Additionally, I am experienced in managing content management systems (CMS) and implementing security measures to protect data integrity. With a background in graphic design, I can create visually appealing content using tools such as Photoshop, Figma, and Illustrator. My wide range of technical skills enables me to deliver effective solutions across both software and hardware aspects of IT.
-                </p>
-                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
-                    Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.
-                </p>
-                <p class="pre-wrap lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
-                    I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    
+    <!-- CONTACT SECTION with GitHub Link -->
     <section class="page-section" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
@@ -180,87 +380,92 @@
                 <div class="divider-custom-icon"><i class="fas fa-phone"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Contact Section Content-->
+            <!-- Contact Section Content - 3 columns including GitHub -->
             <div class="row justify-content-center">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="d-flex flex-column align-items-center">
-                        <a href="tel:+254727980286"><div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div></a>
+                        <a href="tel:+254727980286" class="contact-github-link">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                        </a>
                         <div class="text-muted">Phone No</div>
-                        <div class="lead font-weight-bold"><a href="tel:+25427980286">+254 799 382 984</a></div>
+                        <div class="lead font-weight-bold"><a href="tel:+254727980286">+254 799 382 984</a></div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="d-flex flex-column align-items-center">
-                        <a href="mailto:kiptoo097@gmail.com"><div class="icon-contact mb-3"><i class="far fa-envelope"></i></div></a>
-                        <div class="text-muted">Email</div><a class="lead font-weight-bold"
-                            href="mailto:kiptookennedymail@gmail.com">kiptookennedymail@gmail.com</a>
+                        <a href="mailto:kiptookennedymail@gmail.com" class="contact-github-link">
+                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                        </a>
+                        <div class="text-muted">Email</div>
+                        <a class="lead font-weight-bold" href="mailto:kiptookennedymail@gmail.com">kiptookennedymail@gmail.com</a>
+                    </div>
+                </div>
+                <!-- GitHub Contact Card -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="https://github.com/kiptoo-097" target="_blank" rel="noopener noreferrer" class="contact-github-link">
+                            <div class="icon-contact mb-3"><i class="fab fa-github"></i></div>
+                        </a>
+                        <div class="text-muted">GitHub</div>
+                        <a class="lead font-weight-bold" href="https://github.com/kiptoo-097" target="_blank" rel="noopener noreferrer">github.com/kiptoo-097</a>
+                        <small class="text-muted mt-1">Explore my repositories</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="mb-4"></h4>
-                    <p class="pre-wrap lead mb-0"> </p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="mb-4"></h4>
-                    <a target="_blank" href="https://www.linkedin.com/in/kiptoo-kennedy-5309531b9">
+    <div class="container">
+        <div class="row">
+            
+            
+            <!-- Footer Social Icons -->
+            
+                <h4 class="mb-4">CONNECT WITH ME</h4>
+                <div class="d-flex justify-content-center">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiptoo-kennedy-5309531b9" class="mx-2">
                         <span class="fa-stack fa-lg">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
                         </span>
                     </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="blank" href="https://github.com/kiptoo-097">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="blank" href="https://twitter.com/kennedykiptoo97">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/kiptoo-097" class="mx-2">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    
                 </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="mb-4"></h4>
-                    <p class="pre-wrap lead mb-0"> </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Copyright Section-->
-    <section class="copyright py-4 text-center text-white">
-        <div class="container"><small class="pre-wrap"><a target="_blank" href="https://github.com/kiptoo-097/portfolio/blob/master/LICENSE">MIT Licensed</a> | Kiptoo Kennedy 2025 | Hosted with ❤ by <a href="https://github.com/" target="_blank">GitHub</a></small></div>
         
+            
+        </div>
+    </div>
+</footer>
+
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small class="pre-wrap">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/kiptoo-097/portfolio/blob/master/LICENSE">MIT Licensed</a> | Kiptoo Kennedy 2025 | Hosted with ❤ by <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </small>
+        </div>
     </section>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-    <div class="scroll-to-top d-lg-none position-fixed"><a
-            class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a></div>
 
-    <script type="application/ld+json">
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
-    </script>
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
+    <!-- Third party plugin JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
     <!-- GitHub buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
